@@ -1,0 +1,93 @@
+body, :after, :before{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 17px 0px 17px;
+}
+
+.brand a{
+    text-decoration: none;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 16px;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hamburger{
+    /* margin-top: 20rem; */
+    display: none;
+   
+}
+
+@media screen and (max-width: 760px){
+   .nav-ul{
+    position: absolute;
+    right:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+    height: 16rem;
+    margin-top: 4.5rem;
+    flex-direction: column;
+   }
+
+   .nav-item{
+    display: flex;
+    /* flex-direction: column; */
+    justify-items: center;
+    margin: 17px;
+    text-align: center;
+}
+
+li a{
+    color: #ffff;
+}
+
+.hamburger{
+    /* margin-top: 20rem; */
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar1,.bar2,.bar3{
+margin: 2px;
+width: 20px;
+height: 3px;
+background: black;
+}
+
+ /* .bar1{
+    transform: translate(2px) rotate(70deg);
+
+}
+
+ .bar3{
+    opacity: 0;
+}
+
+ .bar2{
+    transform: translate(5px) rotate(-10deg);
+} */
+
+}
