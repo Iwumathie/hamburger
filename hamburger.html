@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hamburger.css">
@@ -15,7 +17,7 @@
                 <h1>BRAND</h1>
             </a>
         </div>
-        <ul class="nav-ul">
+        <ul class="nav-ul" onclick="setActive(this)">
             <li class="nav-item">
                 <a href="#">Menu</a>
             </li>
@@ -26,11 +28,58 @@
                 <a href="#">Home</a>
             </li>
         </ul>
-        <div class="hamburger change" onclick="collapseNav(this)" >
+        <div class="hamburger" onclick="myFunction(this)" >
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
     </nav>
+
+
+    <div class="form"  >
+        <form name="form" onsubmit=" validateForm(event)">
+
+
+            <label class="nameInput" id="name" >Name</label>
+            <input name="name" class="name" type="text" placeholder="Enter name"  > 
+            
+    
+            <label>Email</label>
+            <input name="email" class="email" type="email" placeholder="Enter Email" >
+    
+            <label>Password</label>
+            <div class="name-div">
+
+                <ion-icon name="eye-outline" onclick="viewPassword(event)">
+
+                </ion-icon>
+                <input name="password" class="password" id="pass" type="password" placeholder="Enter password" > 
+            </div>
+            <label for="">State:</label>
+            <select>
+                <option value="">Nasarawa</option>
+                <option value="">Kano</option>
+                <option value="">Abuja</option>
+                <option value="">Minna</option>
+                
+            </select>
+            <!-- <label >Male</label>
+            <input class="check" type="checkbox" name="checkbox">
+            <label >Female</label>
+
+            <input class="check" type="checkbox" name="checkbox">
+             -->
+            <button  class="btn">Submit</button>
+
+            <p class="message"></p>
+        </form>
+        <p class="list">
+
+        </p>
+    </div>
+
+    <script>
+      
+    </script>
 </body>
 </html>
